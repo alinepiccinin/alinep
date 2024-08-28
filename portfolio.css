@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Sarala:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: rgb(231, 230, 230);
+}
+
+.cabecalho {
+    display: flex;
+    background-color: rgb(13, 13, 13);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 100%;
+}
+
+.imagem-cabecalho {
+    width: 70px;
+    height: 60px;
+    position: left;
+    top: 0;
+    display: block;
+    z-index: 1;
+}
+
+.menu-cabecalho {
+    display: flex;
+    gap: 30px;
+}
+
+.menu-cabecalho-item {
+    font-family: 'Alice', serif;
+    font-weight: 100;
+    font-size: 18px;
+    color: aliceblue;
+    padding: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-cabecalho-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.conteudo {
+    margin-bottom: 16px;
+    border-top: 0.3px solid rgb(99, 99, 99);
+
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo-principal-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.conteudo-titulo {
+    font-family: "Neuton", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 100px;
+    position: fixed;
+    left: 30%;
+    top: 150px;
+}
+
+.conteudo-foto {
+    display: block;
+    margin: 0px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 600px;
+
+}
+
+.imagem-skills {
+    height: 200px;
+    width: 700px;
+    position: fixed;
+    left: 30%;
+    top: 400px;
+}
+
+.botao-portfolio {
+    position: fixed;
+    left: 30%;
+    top: 320px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #66696b;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.botao-portfolio:hover {
+    background-color: #505253;
+    transform: scale(1.05);
+    /* Aumenta ligeiramente o botão ao passar o mouse */
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 600px) {
+    .conteudo-titulo {
+        font-size: 70px;
+        margin-top: 0px;
+        text-align: center;
+        left: 30px;
+    }
+
+    .conteudo-foto {
+        height: 300px;
+        width: auto;
+    }
+
+    .botao-portfolio {
+        font-size: 20px;
+        text-align: center;
+        left: 30px;
+    }
+
+    .imagem-skills {
+        height: 100px;
+        width: 400px;
+        left: 30px;
+    }
+}

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Sarala:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: rgb(231, 230, 230);
+}
+
+.cabecalho {
+    display: flex;
+    background-color: rgb(13, 13, 13);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.imagem-cabecalho {
+    width: 70px;
+    height: 60px;
+    left: 0;
+    top: 0;
+    display: block;
+    z-index: 1;
+}
+
+.menu-cabecalho {
+    display: flex;
+    gap: 30px;
+}
+
+.menu-cabecalho-item {
+    font-family: 'Alice', serif;
+    font-weight: 100;
+    font-size: 18px;
+    color: aliceblue;
+    padding: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-cabecalho-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.conteudo {
+    margin-bottom: 16px;
+    border-top: 0.3px solid rgb(99, 99, 99);
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo-principal-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.conteudo-titulo {
+    font-family: "Neuton", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 100px;
+    position: fixed;
+    left: 30%;
+    top: 150px;
+}
+
+.conteudo-titulo2 {
+    font-family: "Neuton", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    position: fixed;
+    left: 30%;
+    top: 260px;
+}
+
+.conteudo-subtitulo {
+    font-family: "Neuton", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    position: fixed;
+    left: 30%;
+    top: 320px;
+    white-space: pre-line;
+}
+
+.conteudo-foto {
+    display: block;
+    margin: 0px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 600px;
+}
+
+br {
+    content: "";
+}
+
+br:after {
+    content: " ";
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 600px) {
+    .conteudo-titulo {
+        font-size: 70px;
+        margin-top: 80px;
+        position: static;
+    }
+
+    .conteudo-titulo2 {
+        font-size: 30px;
+        align-items: center;
+        margin-top: 5px;
+        position: static;
+        left: 30px;
+    }
+
+    .conteudo-subtitulo {
+        padding: 10px;
+        top: auto;
+        position: static;
+        text-align: left;
+    }
+
+    .conteudo-foto {
+        height: 300px;
+        width: auto;
+    }
+}

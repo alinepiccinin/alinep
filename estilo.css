@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Sarala:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+/* Reset de margens, paddings e box-sizing para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Estilo geral do corpo da página */
+body {
+    font-size: 100%;
+    background: rgb(231, 230, 230);
+}
+
+/* Estilo do cabeçalho */
+.cabecalho {
+    display: flex;
+    background-color: rgb(13, 13, 13);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 100%;
+}
+
+/* Estilo da imagem do cabeçalho */
+.imagem-cabecalho {
+    width: 70px;
+    height: 60px;
+    position: absolute;
+    top: 12px;
+    display: block;
+    z-index: 100%;
+}
+
+/* Estilo do menu de navegação do cabeçalho */
+.menu-cabecalho {
+    display: flex;
+    gap: 30px;
+    top: 0px;
+}
+
+/* Estilo dos itens do menu de navegação */
+.menu-cabecalho-item {
+    font-family: 'Alice', serif;
+    font-weight: 100;
+    font-size: 18px;
+    color: aliceblue;
+    padding: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito hover nos itens do menu de navegação */
+.menu-cabecalho-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Estilo do conteúdo principal */
+.conteudo {
+    margin-bottom: 16px;
+    border-top: 0.3px solid rgb(99, 99, 99);
+}
+
+/* Estilo da seção principal do conteúdo */
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+}
+
+/* Estilo do texto principal do conteúdo */
+.conteudo-principal-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Estilo do título principal */
+.conteudo-titulo {
+    font-family: "Neuton", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 100px;
+    position: fixed;
+    left: 30%;
+    top: 150px;
+}
+
+/* Estilo do segundo título */
+.conteudo-titulo2 {
+    font-family: "Neuton", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    position: fixed;
+    left: 30%;
+    top: 250px;
+}
+
+/* Estilo do subtítulo */
+.conteudo-subtitulo {
+    font-family: 'Alice', serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    position: fixed;
+    left: 30%;
+    top: 300px;
+}
+
+/* Estilo da imagem do rodapé */
+.conteudo-foto {
+    display: block;
+    margin: 0px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 600px;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 600px) {
+
+    /* Ajustes nos títulos e subtítulo para dispositivos móveis */
+    .conteudo-titulo,
+    .conteudo-titulo2,
+    .conteudo-subtitulo {
+        align-items: center;
+        width: auto;
+        position: fixed;
+    }
+
+    /* Ajuste na posição da imagem do cabeçalho para dispositivos móveis */
+    .imagem-cabecalho {
+        position: fixed;
+        left: 5%;
+    }
+
+    /* Ajuste na imagem do rodapé para dispositivos móveis */
+    .conteudo-foto {
+        align-items: center;
+        height: 300px;
+        width: auto;
+    }
+}
